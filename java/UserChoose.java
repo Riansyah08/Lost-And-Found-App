@@ -1,17 +1,22 @@
-package com.example.projectwmp;
+package com.example.wmpfinal;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class UserChoose extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Ensure the layout file is named correctly
+        setContentView(R.layout.activity_user_choose); // Ensure the layout file is named correctly
 
         // Get references to the CardViews
         CardView cardLostItem = findViewById(R.id.lostitem);
