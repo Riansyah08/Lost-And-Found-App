@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to UploadLostItemActivity
-                Intent intent = new Intent(MainActivity.this, UploadItem.class);
+                Intent intent = new Intent(MainActivity.this, UploadImageDB.class);
                 startActivity(intent);
             }
         });
