@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3B9BE"
+    android:padding="16dp">
+
+    <!-- CardView to hold all content -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report Lost Item"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                 />
+
+            <!-- Input Fields -->
+            <EditText
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item Name"
+                android:backgroundTint="#487A7D"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/item_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:backgroundTint="#487A7D"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <EditText
+                android:id="@+id/location_last_seen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location Last Seen"
+                android:backgroundTint="#487A7D"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/date_lost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Lost (e.g., DD/MM/YYYY)"
+                android:backgroundTint="#487A7D"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:backgroundTint="#487A7D"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:inputType="textEmailAddress" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#487A7D"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
