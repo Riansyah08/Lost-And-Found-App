@@ -49,6 +49,8 @@ public class Admin_Login extends AppCompatActivity {
                     Toast.makeText(Admin_Login.this, "Email and Password are required", Toast.LENGTH_SHORT).show();
                 } else {
                     readAdmin(adminMail, adminPass);
+                    Intent intent = new Intent(Admin_Login.this, UploadImageDB.class);
+                    startActivity(intent);
                     maill.setText("");
                     pass.setText("");
                 }
@@ -74,7 +76,7 @@ public class Admin_Login extends AppCompatActivity {
                             Log.d("Admin_Login", "Stored Password: " + storedPass);
                             if (storedPass != null && storedPass.equals(pass)) {
                                 Toast.makeText(Admin_Login.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(Admin_Login.this, MainActivity.class);
+                                Intent intent = new Intent(Admin_Login.this, UploadImageDB.class);
                                 startActivity(intent);
                                 finish();
                             } else {
