@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Invalid email format. It must contain '@'", Toast.LENGTH_SHORT).show();
                     } else {
                         addUser(userId, usertName, userMail);
-                        Intent intent = new Intent(MainActivity.this, Admin_Login.class);
+                        Intent intent = new Intent(MainActivity.this, UserChoose.class);
                         startActivity(intent);
 
                         id.setText("");
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String loggedInAdmin = sharedPreferences.getString("loggedInAdmin", null);
         if (loggedInAdmin != null) {
-            Intent intent = new Intent(MainActivity.this, Admin_Login.class);
+            Intent intent = new Intent(MainActivity.this, UserChoose.class);
             startActivity(intent);
             finish();
         }
